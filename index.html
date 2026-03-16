@@ -998,431 +998,12 @@
             border-top: 2px solid var(--accent);
         }
 
-        /* Admin Login */
-        .admin-login {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            padding: 2rem;
-        }
-
-        .login-container {
-            background: var(--card-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            width: 100%;
-            max-width: 450px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-        }
-
-        .login-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .login-header h1 {
-            color: var(--accent);
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .login-header p {
-            color: var(--text-muted);
-        }
-
-        .login-form .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .login-form input {
-            width: 100%;
-            padding: 1rem 1.5rem;
-            border: 2px solid var(--border);
-            border-radius: 10px;
-            background: var(--secondary);
-            color: var(--text);
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-
-        .login-form input:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .btn-login {
-            width: 100%;
-            padding: 1rem;
-            background: var(--accent);
-            border: none;
-            border-radius: 10px;
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .btn-login:hover {
-            background: var(--accent-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
-        }
-
-        .back-to-store {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-
-        .back-to-store a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        /* Admin Dashboard */
-        .admin-dashboard {
-            display: none;
-            min-height: 100vh;
-            background: var(--primary);
-        }
-
-        .admin-sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 280px;
-            height: 100vh;
-            background: var(--secondary);
-            border-right: 1px solid var(--border);
-            padding: 2rem;
-            overflow-y: auto;
-            z-index: 100;
-        }
-
-        .admin-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 3rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .admin-nav {
-            list-style: none;
-        }
-
-        .admin-nav li {
-            margin-bottom: 0.5rem;
-        }
-
-        .admin-nav a {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            color: var(--text-muted);
-            text-decoration: none;
-            border-radius: 10px;
-            transition: all 0.3s;
-        }
-
-        .admin-nav a:hover,
-        .admin-nav a.active {
-            background: var(--accent);
-            color: var(--primary);
-        }
-
-        .admin-nav i {
-            width: 20px;
-        }
-
-        .admin-main {
-            margin-left: 280px;
-            padding: 2rem;
-        }
-
-        .admin-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 3rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .admin-header h1 {
-            font-size: 2rem;
-        }
-
-        .admin-user {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logout-btn {
-            padding: 0.5rem 1.5rem;
-            background: var(--danger);
-            border: none;
-            border-radius: 8px;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .logout-btn:hover {
-            background: #ff3344;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .stat-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--accent);
-        }
-
-        .stat-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--secondary);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .stat-value {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: var(--text-muted);
-        }
-
-        .admin-section {
-            background: var(--card-bg);
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .btn-add {
-            padding: 0.8rem 1.5rem;
-            background: var(--success);
-            border: none;
-            border-radius: 8px;
-            color: var(--primary);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .btn-add:hover {
-            background: #00cc6a;
-            transform: translateY(-2px);
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .data-table th,
-        .data-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .data-table th {
-            color: var(--text-muted);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-        }
-
-        .data-table tr:hover {
-            background: var(--secondary);
-        }
-
-        .table-actions {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .btn-edit,
-        .btn-delete {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 0.9rem;
-        }
-
-        .btn-edit {
-            background: var(--warning);
-            color: var(--primary);
-        }
-
-        .btn-delete {
-            background: var(--danger);
-            color: white;
-        }
-
-        .btn-edit:hover,
-        .btn-delete:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-
-        .status-badge {
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .status-pending {
-            background: var(--warning);
-            color: var(--primary);
-        }
-
-        .status-shipped {
-            background: #3498db;
-            color: white;
-        }
-
-        .status-delivered {
-            background: var(--success);
-            color: var(--primary);
-        }
-
-        .stock-low {
-            color: var(--danger);
-            font-weight: 600;
-        }
-
-        .stock-ok {
-            color: var(--success);
-        }
-
-        /* Modal Forms */
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 4000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .modal.active {
-            display: flex;
-        }
-
-        .modal-container {
-            background: var(--secondary);
-            border-radius: 20px;
-            width: 100%;
-            max-width: 600px;
-            max-height: 90vh;
-            overflow-y: auto;
-            padding: 2rem;
-            position: relative;
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        .modal-header h2 {
-            font-size: 1.5rem;
-        }
-
-        .close-modal-btn {
-            background: none;
-            border: none;
-            color: var(--text);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .image-preview {
-            width: 100%;
-            height: 200px;
-            background: var(--card-bg);
-            border: 2px dashed var(--border);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-
-        .image-preview img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .image-preview-placeholder {
-            color: var(--text-muted);
-            text-align: center;
+        /* Wishlist Page */
+        .wishlist-section {
+            padding: 6rem 5% 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 300px);
         }
 
         /* Footer */
@@ -1629,19 +1210,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .admin-sidebar {
-                transform: translateX(-100%);
-                transition: transform 0.3s;
-            }
-
-            .admin-sidebar.open {
-                transform: translateX(0);
-            }
-
-            .admin-main {
-                margin-left: 0;
-            }
-
             .mobile-menu-btn {
                 display: block;
             }
@@ -1670,10 +1238,6 @@
 
             .cart-sidebar {
                 width: 100%;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
             }
 
             .filter-bar {
@@ -1723,7 +1287,7 @@
 
     <!-- Customer Interface -->
     <div id="customer-interface">
-        <!-- Navigation -->
+        <!-- Navigation - NO ADMIN LINK -->
         <nav class="navbar" id="navbar">
             <div class="nav-container">
                 <a href="#" class="logo" onclick="showPage('home')">
@@ -1736,11 +1300,11 @@
                     <li><a href="#" onclick="showPage('shop')">Shop</a></li>
                     <li><a href="#" onclick="showPage('categories')">Categories</a></li>
                     <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                    <li><a href="#" onclick="showAdminLogin()">Admin</a></li>
+                    <!-- ADMIN LINK REMOVED - ACCESS ONLY VIA SECRET URL -->
                 </ul>
 
                 <div class="nav-actions">
-                    <div class="nav-icon" onclick="toggleWishlist()">
+                    <div class="nav-icon" onclick="showWishlist()">
                         <i class="fas fa-heart"></i>
                     </div>
                     <div class="nav-icon" onclick="toggleCart()">
@@ -1902,6 +1466,19 @@
             </div>
         </section>
 
+        <!-- Wishlist Page -->
+        <section class="page-section" id="wishlist">
+            <div class="wishlist-section">
+                <div class="section-header">
+                    <h2>My Wishlist</h2>
+                    <p>Your saved items</p>
+                </div>
+                <div class="products-grid" id="wishlistGrid">
+                    <!-- Wishlist items injected by JS -->
+                </div>
+            </div>
+        </section>
+
         <!-- Checkout Page -->
         <section class="page-section" id="checkout">
             <div class="checkout-section">
@@ -1910,7 +1487,7 @@
                     <div class="checkout-form">
                         <h3 style="margin-bottom: 1.5rem;">Shipping Information</h3>
                         <form id="checkoutForm" onsubmit="processCheckout(event)">
-                            <div class="form-row">
+                            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                                 <div class="form-group">
                                     <label>First Name</label>
                                     <input type="text" required placeholder="John">
@@ -1936,7 +1513,7 @@
                                 <textarea rows="3" required placeholder="Street address"></textarea>
                             </div>
                             
-                            <div class="form-row">
+                            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                                 <div class="form-group">
                                     <label>City</label>
                                     <input type="text" required placeholder="City">
@@ -2146,502 +1723,453 @@
         <div class="toast-container" id="toastContainer"></div>
     </div>
 
-    <!-- Admin Login -->
-    <div class="admin-login" id="adminLogin" style="display: none;">
-        <div class="login-container">
-            <div class="login-header">
-                <h1><i class="fas fa-lock"></i> Admin Access</h1>
-                <p>Enter your credentials to access the dashboard</p>
-            </div>
-            
-            <form class="login-form" onsubmit="handleAdminLogin(event)">
-                <div class="form-group">
-                    <input type="text" id="adminUsername" placeholder="Username" required value="admin">
-                </div>
-                
-                <div class="form-group">
-                    <input type="password" id="adminPassword" placeholder="Password" required value="password">
-                </div>
-                
-                <button type="submit" class="btn-login">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </button>
-            </form>
-            
-            <div class="back-to-store">
-                <a href="#" onclick="showPage('home')">
-                    <i class="fas fa-arrow-left"></i> Back to Store
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Admin Dashboard -->
-    <div class="admin-dashboard" id="adminDashboard">
-        <aside class="admin-sidebar">
-            <div class="admin-logo">
-                <i class="fas fa-bolt"></i>
-                TechVault Admin
-            </div>
-            
-            <ul class="admin-nav">
-                <li><a href="#" class="active" onclick="showAdminSection('dashboard')">
-                    <i class="fas fa-home"></i> Dashboard
-                </a></li>
-                <li><a href="#" onclick="showAdminSection('products')">
-                    <i class="fas fa-box"></i> Products
-                </a></li>
-                <li><a href="#" onclick="showAdminSection('orders')">
-                    <i class="fas fa-shopping-bag"></i> Orders
-                </a></li>
-                <li><a href="#" onclick="showAdminSection('customers')">
-                    <i class="fas fa-users"></i> Customers
-                </a></li>
-                <li><a href="#" onclick="showAdminSection('inventory')">
-                    <i class="fas fa-warehouse"></i> Inventory
-                </a></li>
-                <li><a href="#" onclick="showAdminSection('backup')">
-                    <i class="fas fa-database"></i> Backup & Export
-                </a></li>
-                <li><a href="#" onclick="logoutAdmin()">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </a></li>
-            </ul>
-        </aside>
-
-        <main class="admin-main">
-            <!-- Dashboard Section -->
-            <div id="admin-dashboard-section" class="admin-section-content">
-                <div class="admin-header">
-                    <h1>Dashboard Overview</h1>
-                    <div class="admin-user">
-                        <span>Welcome, Admin</span>
-                        <button class="logout-btn" onclick="logoutAdmin()">Logout</button>
-                    </div>
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-box"></i>
-                        </div>
-                        <div class="stat-value" id="statProducts">0</div>
-                        <div class="stat-label">Total Products</div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <div class="stat-value" id="statOrders">0</div>
-                        <div class="stat-label">Total Orders</div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="stat-value" id="statRevenue">$0</div>
-                        <div class="stat-label">Total Revenue</div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-value" id="statCustomers">0</div>
-                        <div class="stat-label">Customers</div>
-                    </div>
-                </div>
-
-                <div class="admin-section">
-                    <h3 class="section-title">Recent Orders</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Order ID</th>
-                                <th>Customer</th>
-                                <th>Date</th>
-                                <th>Amount</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody id="recentOrdersTable">
-                            <!-- Injected by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Products Section -->
-            <div id="admin-products-section" class="admin-section-content" style="display: none;">
-                <div class="admin-header">
-                    <h1>Product Management</h1>
-                    <button class="btn-add" onclick="openProductModal()">
-                        <i class="fas fa-plus"></i> Add Product
-                    </button>
-                </div>
-
-                <div class="admin-section">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Image</th>
-                                <th>Name</th>
-                                <th>Category</th>
-                                <th>Price</th>
-                                <th>Stock</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="adminProductsTable">
-                            <!-- Injected by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Orders Section -->
-            <div id="admin-orders-section" class="admin-section-content" style="display: none;">
-                <div class="admin-header">
-                    <h1>Order Management</h1>
-                </div>
-
-                <div class="admin-section">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Order ID</th>
-                                <th>Customer</th>
-                                <th>Items</th>
-                                <th>Total</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="adminOrdersTable">
-                            <!-- Injected by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Customers Section -->
-            <div id="admin-customers-section" class="admin-section-content" style="display: none;">
-                <div class="admin-header">
-                    <h1>Customer Management</h1>
-                </div>
-
-                <div class="admin-section">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Orders</th>
-                                <th>Total Spent</th>
-                                <th>Joined</th>
-                            </tr>
-                        </thead>
-                        <tbody id="adminCustomersTable">
-                            <!-- Injected by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Inventory Section -->
-            <div id="admin-inventory-section" class="admin-section-content" style="display: none;">
-                <div class="admin-header">
-                    <h1>Inventory Tracking</h1>
-                </div>
-
-                <div class="admin-section">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--danger);">
-                        <i class="fas fa-exclamation-triangle"></i> Low Stock Alerts
-                    </h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Current Stock</th>
-                                <th>Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="lowStockTable">
-                            <!-- Injected by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Backup Section -->
-            <div id="admin-backup-section" class="admin-section-content" style="display: none;">
-                <div class="admin-header">
-                    <h1>Backup & Export</h1>
-                </div>
-
-                <div class="admin-section">
-                    <h3 class="section-title">Export Data</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                        <div style="background: var(--card-bg); padding: 2rem; border-radius: 15px; text-align: center;">
-                            <i class="fas fa-file-csv" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
-                            <h4>Export Products</h4>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">Download all product data as CSV</p>
-                            <button class="btn btn-primary" onclick="exportProducts()">
-                                <i class="fas fa-download"></i> Download
-                            </button>
-                        </div>
-                        
-                        <div style="background: var(--card-bg); padding: 2rem; border-radius: 15px; text-align: center;">
-                            <i class="fas fa-file-export" style="font-size: 3rem; color: var(--success); margin-bottom: 1rem;"></i>
-                            <h4>Export Orders</h4>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">Download all orders as CSV</p>
-                            <button class="btn btn-primary" onclick="exportOrders()" style="background: var(--success);">
-                                <i class="fas fa-download"></i> Download
-                            </button>
-                        </div>
-                        
-                        <div style="background: var(--card-bg); padding: 2rem; border-radius: 15px; text-align: center;">
-                            <i class="fas fa-database" style="font-size: 3rem; color: var(--warning); margin-bottom: 1rem;"></i>
-                            <h4>Full Backup</h4>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">Create complete data backup</p>
-                            <button class="btn btn-primary" onclick="createBackup()" style="background: var(--warning); color: var(--primary);">
-                                <i class="fas fa-save"></i> Backup Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Product Add/Edit Modal -->
-    <div class="modal" id="productFormModal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h2 id="modalTitle">Add Product</h2>
-                <button class="close-modal-btn" onclick="closeProductFormModal()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <form id="productForm" onsubmit="saveProduct(event)">
-                <input type="hidden" id="productId">
-                
-                <div class="image-preview" id="imagePreview">
-                    <div class="image-preview-placeholder">
-                        <i class="fas fa-image" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-                        <p>Click to upload image</p>
-                    </div>
-                </div>
-                <input type="file" id="productImage" accept="image/*" style="display: none;" onchange="previewImage(event)">
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Product Name</label>
-                        <input type="text" id="productName" required placeholder="Enter product name">
-                    </div>
-                    <div class="form-group">
-                        <label>Category</label>
-                        <select id="productCategory" required>
-                            <option value="">Select Category</option>
-                            <option value="phone">Phone Accessories</option>
-                            <option value="laptop">Laptop Accessories</option>
-                            <option value="chargers">Chargers</option>
-                            <option value="audio">Headphones & Earbuds</option>
-                            <option value="power">Power Banks</option>
-                            <option value="cases">Cases & Covers</option>
-                            <option value="peripherals">Keyboards & Mice</option>
-                            <option value="cables">Adapters & Cables</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Price ($)</label>
-                        <input type="number" id="productPrice" step="0.01" required placeholder="0.00">
-                    </div>
-                    <div class="form-group">
-                        <label>Stock Quantity</label>
-                        <input type="number" id="productStock" required placeholder="0">
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Description</label>
-                    <textarea id="productDescription" rows="3" required placeholder="Enter product description"></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label>Rating (1-5)</label>
-                    <input type="number" id="productRating" min="1" max="5" step="0.1" value="4.5">
-                </div>
-                
-                <button type="submit" class="btn-checkout">
-                    <i class="fas fa-save"></i> Save Product
-                </button>
-            </form>
-        </div>
-    </div>
-
     <script>
-        // Data Store
+        // ==========================================
+        // EXPANDED PRODUCT DATABASE - 30+ PRODUCTS
+        // ==========================================
         let products = [
+            // PHONE ACCESSORIES (8 products)
             {
                 id: 1,
-                name: "Premium Wireless Earbuds",
-                category: "audio",
-                price: 79.99,
+                name: "iPhone 15 Pro Max Case - Titanium",
+                category: "cases",
+                price: 34.99,
                 rating: 4.8,
                 stock: 45,
-                image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&auto=format&fit=crop",
-                description: "High-quality wireless earbuds with active noise cancellation and 30-hour battery life.",
+                image: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400&auto=format&fit=crop",
+                description: "Military-grade drop protection with MagSafe compatibility. Titanium finish matches your phone perfectly.",
                 featured: true
             },
             {
                 id: 2,
-                name: "65W GaN Charger",
-                category: "chargers",
-                price: 49.99,
-                rating: 4.9,
-                stock: 8,
-                image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&auto=format&fit=crop",
-                description: "Compact 65W GaN charger with 3 ports for simultaneous charging.",
-                featured: true
+                name: "Samsung Galaxy S24 Ultra Screen Protector",
+                category: "phone",
+                price: 19.99,
+                rating: 4.6,
+                stock: 89,
+                image: "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?w=400&auto=format&fit=crop",
+                description: "9H tempered glass with fingerprint sensor compatibility and edge-to-edge coverage.",
+                featured: false
             },
             {
                 id: 3,
-                name: "Laptop Stand Pro",
-                category: "laptop",
-                price: 59.99,
-                rating: 4.7,
-                stock: 32,
-                image: "https://images.unsplash.com/photo-1616353329437-9753a6975077?w=400&auto=format&fit=crop",
-                description: "Ergonomic aluminum laptop stand with adjustable height and angle.",
+                name: "MagSafe 3-in-1 Charging Station",
+                category: "phone",
+                price: 79.99,
+                rating: 4.9,
+                stock: 23,
+                image: "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&auto=format&fit=crop",
+                description: "Charge your iPhone, Apple Watch, and AirPods simultaneously with 15W fast charging.",
                 featured: true
             },
             {
                 id: 4,
-                name: "20000mAh Power Bank",
-                category: "power",
-                price: 39.99,
-                rating: 4.6,
-                stock: 12,
-                image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&auto=format&fit=crop",
-                description: "High-capacity power bank with fast charging and LED display.",
-                featured: true
+                name: "Phone Camera Lens Kit Pro",
+                category: "phone",
+                price: 49.99,
+                rating: 4.4,
+                stock: 15,
+                image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&auto=format&fit=crop",
+                description: "4-in-1 lens kit: Wide, Macro, Fisheye, and Telephoto lenses for professional mobile photography.",
+                featured: false
             },
             {
                 id: 5,
-                name: "iPhone 15 Pro Case",
-                category: "cases",
-                price: 24.99,
-                rating: 4.5,
-                stock: 67,
-                image: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400&auto=format&fit=crop",
-                description: "Military-grade protection case with MagSafe compatibility.",
+                name: "MagSafe Car Mount Charger",
+                category: "phone",
+                price: 44.99,
+                rating: 4.7,
+                stock: 32,
+                image: "https://images.unsplash.com/photo-1616410011236-7a42121dd981?w=400&auto=format&fit=crop",
+                description: "Strong magnetic hold with 15W wireless charging. 360-degree rotation for perfect viewing angle.",
                 featured: false
             },
             {
                 id: 6,
-                name: "Mechanical Keyboard RGB",
-                category: "peripherals",
-                price: 129.99,
-                rating: 4.9,
-                stock: 23,
-                image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&auto=format&fit=crop",
-                description: "Full-size mechanical keyboard with customizable RGB lighting.",
-                featured: true
+                name: "Phone Tripod Stand with Remote",
+                category: "phone",
+                price: 29.99,
+                rating: 4.5,
+                stock: 67,
+                image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&auto=format&fit=crop",
+                description: "Extendable tripod up to 51 inches with Bluetooth remote shutter for perfect selfies and videos.",
+                featured: false
             },
             {
                 id: 7,
-                name: "USB-C Hub 7-in-1",
-                category: "cables",
-                price: 69.99,
-                rating: 4.4,
-                stock: 5,
-                image: "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&auto=format&fit=crop",
-                description: "Multi-port USB-C hub with HDMI, USB-A, SD card reader, and PD charging.",
+                name: "Waterproof Phone Pouch - Universal",
+                category: "phone",
+                price: 14.99,
+                rating: 4.3,
+                stock: 120,
+                image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&auto=format&fit=crop",
+                description: "IPX8 certified waterproof case for underwater photography. Fits all phones up to 7 inches.",
                 featured: false
             },
             {
                 id: 8,
-                name: "Wireless Mouse Pro",
-                category: "peripherals",
-                price: 44.99,
-                rating: 4.7,
-                stock: 38,
-                image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&auto=format&fit=crop",
-                description: "Ergonomic wireless mouse with precision tracking and 6-month battery life.",
+                name: "Phone Ring Light Clip",
+                category: "phone",
+                price: 24.99,
+                rating: 4.6,
+                stock: 45,
+                image: "https://images.unsplash.com/photo-1572569028738-411a197b83cd?w=400&auto=format&fit=crop",
+                description: "Rechargeable LED ring light with 3 color modes and 10 brightness levels for perfect lighting.",
                 featured: false
             },
+
+            // LAPTOP ACCESSORIES (6 products)
             {
                 id: 9,
-                name: "Screen Protector 2-Pack",
-                category: "phone",
-                price: 14.99,
-                rating: 4.3,
-                stock: 89,
-                image: "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?w=400&auto=format&fit=crop",
-                description: "Tempered glass screen protector with 9H hardness rating.",
-                featured: false
+                name: "Aluminum Laptop Stand - Ergonomic",
+                category: "laptop",
+                price: 59.99,
+                rating: 4.8,
+                stock: 38,
+                image: "https://images.unsplash.com/photo-1616353329437-9753a6975077?w=400&auto=format&fit=crop",
+                description: "Adjustable height and angle for perfect ergonomics. Compatible with 10-17 inch laptops.",
+                featured: true
             },
             {
                 id: 10,
-                name: "MagSafe Car Mount",
-                category: "phone",
-                price: 34.99,
-                rating: 4.6,
-                stock: 15,
-                image: "https://images.unsplash.com/photo-1616410011236-7a42121dd981?w=400&auto=format&fit=crop",
-                description: "Strong magnetic car mount with wireless charging capability.",
+                name: "Laptop Sleeve 15.6\" - Waterproof",
+                category: "laptop",
+                price: 29.99,
+                rating: 4.7,
+                stock: 56,
+                image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&auto=format&fit=crop",
+                description: "Shockproof laptop sleeve with accessory pockets and water-resistant exterior.",
                 featured: false
             },
             {
                 id: 11,
-                name: "Laptop Sleeve 15.6\"",
+                name: "USB-C Hub 7-in-1 Adapter",
                 category: "laptop",
-                price: 29.99,
-                rating: 4.5,
-                stock: 42,
-                image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&auto=format&fit=crop",
-                description: "Water-resistant laptop sleeve with padded interior and accessory pockets.",
-                featured: false
+                price: 69.99,
+                rating: 4.6,
+                stock: 8,
+                image: "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&auto=format&fit=crop",
+                description: "HDMI 4K, 3x USB-A, SD/TF Card Reader, and 100W PD charging in one compact hub.",
+                featured: true
             },
             {
                 id: 12,
-                name: "Gaming Headset",
+                name: "Laptop Cooling Pad RGB",
+                category: "laptop",
+                price: 39.99,
+                rating: 4.5,
+                stock: 42,
+                image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&auto=format&fit=crop",
+                description: "6 silent fans with adjustable speed and RGB lighting. Fits laptops up to 17 inches.",
+                featured: false
+            },
+            {
+                id: 13,
+                name: "Privacy Screen Filter 14\"",
+                category: "laptop",
+                price: 49.99,
+                rating: 4.4,
+                stock: 28,
+                image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&auto=format&fit=crop",
+                description: "Anti-spy screen protector with blue light filter. 60-degree viewing angle protection.",
+                featured: false
+            },
+            {
+                id: 14,
+                name: "Laptop Docking Station Dual 4K",
+                category: "laptop",
+                price: 199.99,
+                rating: 4.9,
+                stock: 12,
+                image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400&auto=format&fit=crop",
+                description: "Dual 4K HDMI, Ethernet, 6x USB, Audio, and 100W charging. Turn your laptop into a workstation.",
+                featured: true
+            },
+
+            // CHARGERS (5 products)
+            {
+                id: 15,
+                name: "65W GaN Charger 3-Port",
+                category: "chargers",
+                price: 49.99,
+                rating: 4.9,
+                stock: 15,
+                image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&auto=format&fit=crop",
+                description: "Gallium Nitride technology for compact size. 2x USB-C and 1x USB-A with intelligent power distribution.",
+                featured: true
+            },
+            {
+                id: 16,
+                name: "100W USB-C Charging Cable",
+                category: "chargers",
+                price: 19.99,
+                rating: 4.7,
+                stock: 78,
+                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop",
+                description: "Braided nylon cable with E-Marker chip for safe 100W fast charging. 2 meters long.",
+                featured: false
+            },
+            {
+                id: 17,
+                name: "Wireless Charging Pad 15W",
+                category: "chargers",
+                price: 29.99,
+                rating: 4.5,
+                stock: 65,
+                image: "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?w=400&auto=format&fit=crop",
+                description: "Fast wireless charging for all Qi-enabled devices. LED indicator and temperature control.",
+                featured: false
+            },
+            {
+                id: 18,
+                name: "Car Charger 60W Dual USB-C",
+                category: "chargers",
+                price: 34.99,
+                rating: 4.6,
+                stock: 43,
+                image: "https://images.unsplash.com/photo-1626224583764-847649623bf6?w=400&auto=format&fit=crop",
+                description: "Rapid car charging with 30W per port. Compatible with all USB-C devices including laptops.",
+                featured: false
+            },
+            {
+                id: 19,
+                name: "MagSafe Battery Pack 10000mAh",
+                category: "chargers",
+                price: 79.99,
+                rating: 4.8,
+                stock: 22,
+                image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&auto=format&fit=crop",
+                description: "MagSafe compatible power bank with 15W wireless and 20W wired output. LED display.",
+                featured: true
+            },
+
+            // AUDIO (6 products)
+            {
+                id: 20,
+                name: "Premium Wireless Earbuds Pro",
+                category: "audio",
+                price: 149.99,
+                rating: 4.9,
+                stock: 35,
+                image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&auto=format&fit=crop",
+                description: "Active Noise Cancellation, Transparency mode, and 30-hour battery with charging case.",
+                featured: true
+            },
+            {
+                id: 21,
+                name: "Gaming Headset 7.1 Surround",
                 category: "audio",
                 price: 89.99,
                 rating: 4.7,
                 stock: 28,
                 image: "https://images.unsplash.com/photo-1612444530582-fc66183b16f7?w=400&auto=format&fit=crop",
-                description: "Surround sound gaming headset with noise-canceling microphone.",
+                description: "USB and 3.5mm connectivity with noise-canceling mic and RGB lighting.",
                 featured: true
+            },
+            {
+                id: 22,
+                name: "Portable Bluetooth Speaker 40W",
+                category: "audio",
+                price: 59.99,
+                rating: 4.6,
+                stock: 48,
+                image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&auto=format&fit=crop",
+                description: "Waterproof IPX7 speaker with 24-hour playtime and deep bass radiators.",
+                featured: false
+            },
+            {
+                id: 23,
+                name: "USB-C to 3.5mm Audio Adapter",
+                category: "audio",
+                price: 14.99,
+                rating: 4.4,
+                stock: 95,
+                image: "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&auto=format&fit=crop",
+                description: "DAC chip for high-resolution audio. Compatible with all USB-C devices.",
+                featured: false
+            },
+            {
+                id: 24,
+                name: "Earbuds Cleaning Kit",
+                category: "audio",
+                price: 12.99,
+                rating: 4.8,
+                stock: 156,
+                image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&auto=format&fit=crop",
+                description: "Complete cleaning kit with brushes, cleaning gel, and microfiber cloth.",
+                featured: false
+            },
+            {
+                id: 25,
+                name: "Studio Microphone USB",
+                category: "audio",
+                price: 119.99,
+                rating: 4.7,
+                stock: 18,
+                image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&auto=format&fit=crop",
+                description: "Professional condenser mic for streaming and recording with built-in pop filter.",
+                featured: false
+            },
+
+            // POWER BANKS (3 products)
+            {
+                id: 26,
+                name: "Power Bank 30000mAh 100W",
+                category: "power",
+                price: 79.99,
+                rating: 4.8,
+                stock: 12,
+                image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&auto=format&fit=crop",
+                description: "Massive capacity with 100W USB-C PD. Can charge laptops and phones simultaneously.",
+                featured: true
+            },
+            {
+                id: 27,
+                name: "Solar Power Bank 20000mAh",
+                category: "power",
+                price: 49.99,
+                rating: 4.5,
+                stock: 34,
+                image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400&auto=format&fit=crop",
+                description: "Rugged outdoor power bank with solar charging and LED flashlight. Waterproof IP67.",
+                featured: false
+            },
+            {
+                id: 28,
+                name: "Mini Power Bank 10000mAh",
+                category: "power",
+                price: 29.99,
+                rating: 4.6,
+                stock: 67,
+                image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=400&auto=format&fit=crop",
+                description: "Credit card size with 20W fast charging. Fits easily in any pocket.",
+                featured: false
+            },
+
+            // CASES & COVERS (2 products)
+            {
+                id: 29,
+                name: "MacBook Pro 16\" Hard Case",
+                category: "cases",
+                price: 44.99,
+                rating: 4.7,
+                stock: 29,
+                image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop",
+                description: "Crystal clear hard shell with rubber feet and ventilation grilles.",
+                featured: false
+            },
+            {
+                id: 30,
+                name: "iPad Pro 12.9\" Keyboard Case",
+                category: "cases",
+                price: 129.99,
+                rating: 4.8,
+                stock: 15,
+                image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&auto=format&fit=crop",
+                description: "Detachable keyboard with trackpad and 7-color backlight. 360-degree protection.",
+                featured: true
+            },
+
+            // PERIPHERALS (4 products)
+            {
+                id: 31,
+                name: "Mechanical Keyboard RGB Hot-Swappable",
+                category: "peripherals",
+                price: 149.99,
+                rating: 4.9,
+                stock: 21,
+                image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&auto=format&fit=crop",
+                description: "Gateron switches with full RGB and hot-swap sockets. Programmable macros.",
+                featured: true
+            },
+            {
+                id: 32,
+                name: "Wireless Mouse Ergonomic Vertical",
+                category: "peripherals",
+                price: 54.99,
+                rating: 4.6,
+                stock: 38,
+                image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&auto=format&fit=crop",
+                description: "Reduces wrist strain with vertical design. 4000 DPI and 6-month battery life.",
+                featured: false
+            },
+            {
+                id: 33,
+                name: "Gaming Mouse Pad RGB Extended",
+                category: "peripherals",
+                price: 34.99,
+                rating: 4.7,
+                stock: 52,
+                image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400&auto=format&fit=crop",
+                description: "900x400mm extended pad with 14 RGB modes and water-resistant surface.",
+                featured: false
+            },
+            {
+                id: 34,
+                name: "Webcam 4K with Ring Light",
+                category: "peripherals",
+                price: 89.99,
+                rating: 4.5,
+                stock: 24,
+                image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&auto=format&fit=crop",
+                description: "4K resolution with built-in ring light and dual microphones. Auto-focus.",
+                featured: false
+            },
+
+            // CABLES & ADAPTERS (3 products)
+            {
+                id: 35,
+                name: "USB-C to HDMI 4K Adapter",
+                category: "cables",
+                price: 24.99,
+                rating: 4.6,
+                stock: 73,
+                image: "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&auto=format&fit=crop",
+                description: "Mirror or extend your screen to 4K TV or monitor. Plug and play.",
+                featured: false
+            },
+            {
+                id: 36,
+                name: "Braided USB-C Cable 3-Pack",
+                category: "cables",
+                price: 19.99,
+                rating: 4.8,
+                stock: 112,
+                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop",
+                description: "3ft, 6ft, and 10ft lengths. 60W charging and 480Mbps data transfer.",
+                featured: false
+            },
+            {
+                id: 37,
+                name: "Lightning to USB-C Adapter",
+                category: "cables",
+                price: 9.99,
+                rating: 4.4,
+                stock: 89,
+                image: "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&auto=format&fit=crop",
+                description: "Connect Lightning devices to USB-C chargers and computers. MFi certified.",
+                featured: false
             }
         ];
 
+        // Data Store
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
         let orders = JSON.parse(localStorage.getItem('orders')) || [];
         let customers = JSON.parse(localStorage.getItem('customers')) || [];
         let currentDetailProduct = null;
         let currentModalProduct = null;
-        let editingProductId = null;
 
         // Categories
         const categories = [
-            { id: 'phone', name: 'Phone Accessories', icon: 'fa-mobile-alt', count: 24 },
-            { id: 'laptop', name: 'Laptop Accessories', icon: 'fa-laptop', count: 18 },
-            { id: 'chargers', name: 'Chargers', icon: 'fa-plug', count: 15 },
-            { id: 'audio', name: 'Headphones & Earbuds', icon: 'fa-headphones', count: 22 },
-            { id: 'power', name: 'Power Banks', icon: 'fa-battery-full', count: 12 },
-            { id: 'cases', name: 'Cases & Covers', icon: 'fa-shield-alt', count: 35 },
-            { id: 'peripherals', name: 'Keyboards & Mice', icon: 'fa-keyboard', count: 16 },
-            { id: 'cables', name: 'Adapters & Cables', icon: 'fa-usb', count: 28 }
+            { id: 'phone', name: 'Phone Accessories', icon: 'fa-mobile-alt', count: 8 },
+            { id: 'laptop', name: 'Laptop Accessories', icon: 'fa-laptop', count: 6 },
+            { id: 'chargers', name: 'Chargers', icon: 'fa-plug', count: 5 },
+            { id: 'audio', name: 'Headphones & Earbuds', icon: 'fa-headphones', count: 6 },
+            { id: 'power', name: 'Power Banks', icon: 'fa-battery-full', count: 3 },
+            { id: 'cases', name: 'Cases & Covers', icon: 'fa-shield-alt', count: 2 },
+            { id: 'peripherals', name: 'Keyboards & Mice', icon: 'fa-keyboard', count: 4 },
+            { id: 'cables', name: 'Adapters & Cables', icon: 'fa-usb', count: 3 }
         ];
 
         // Initialize
@@ -2656,6 +2184,9 @@
             updateCartCount();
             renderCart();
             
+            // Check for admin access via URL parameter
+            checkAdminAccess();
+            
             // Navbar scroll effect
             window.addEventListener('scroll', function() {
                 const navbar = document.getElementById('navbar');
@@ -2665,27 +2196,44 @@
                     navbar.classList.remove('scrolled');
                 }
             });
-
-            // Image preview click
-            document.getElementById('imagePreview').addEventListener('click', function() {
-                document.getElementById('productImage').click();
-            });
         });
+
+        // SECRET ADMIN ACCESS - Check URL parameter
+        function checkAdminAccess() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const adminKey = urlParams.get('access');
+            
+            // Secret key: "techvault2024admin"
+            if (adminKey === 'techvault2024admin') {
+                showAdminLogin();
+            }
+        }
 
         // Navigation
         function showPage(page) {
+            // Hide all pages
             document.querySelectorAll('.page-section').forEach(section => {
                 section.classList.remove('active');
             });
-            document.getElementById(page).classList.add('active');
             
+            // Show selected page
+            const selectedPage = document.getElementById(page);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+            
+            // Update nav active state
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.classList.remove('active');
             });
             
-            if (page === 'home') {
-                document.querySelector('.nav-links a[onclick="showPage(\'home\')"]').classList.add('active');
-            }
+            // Find and activate current nav link
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(`showPage('${page}')`)) {
+                    link.classList.add('active');
+                }
+            });
             
             window.scrollTo(0, 0);
             
@@ -2693,6 +2241,8 @@
                 renderShopProducts();
             } else if (page === 'categories') {
                 renderAllCategories();
+            } else if (page === 'wishlist') {
+                renderWishlist();
             }
         }
 
@@ -3103,7 +2653,7 @@
         }
 
         // Wishlist
-        function toggleWishlist() {
+        function showWishlist() {
             showPage('wishlist');
             renderWishlist();
         }
@@ -3123,6 +2673,11 @@
             localStorage.setItem('wishlist', JSON.stringify(wishlist));
             renderFeaturedProducts();
             renderShopProducts();
+            
+            // Update wishlist page if visible
+            if (document.getElementById('wishlist').classList.contains('active')) {
+                renderWishlist();
+            }
         }
 
         function renderWishlist() {
@@ -3142,11 +2697,123 @@
             }
         }
 
-        // Admin Functions
+        // Contact Form
+        function submitContact(e) {
+            e.preventDefault();
+            showToast('Message sent successfully! We will get back to you soon.', 'success');
+            e.target.reset();
+        }
+
+        // Toast Notifications
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            
+            const icon = type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle';
+            
+            toast.innerHTML = `
+                <i class="fas fa-${icon} toast-icon"></i>
+                <span>${message}</span>
+            `;
+            
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+
+        // ==========================================
+        // ADMIN DASHBOARD CODE (Hidden from customers)
+        // ==========================================
+        
         function showAdminLogin() {
             document.getElementById('customer-interface').style.display = 'none';
-            document.getElementById('adminLogin').style.display = 'flex';
-            document.getElementById('adminDashboard').style.display = 'none';
+            
+            // Create admin login HTML
+            const adminLoginHTML = `
+                <div class="admin-login" id="adminLogin" style="
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+                    padding: 2rem;
+                ">
+                    <div style="
+                        background: var(--card-bg);
+                        padding: 3rem;
+                        border-radius: 20px;
+                        border: 1px solid var(--border);
+                        width: 100%;
+                        max-width: 450px;
+                        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+                    ">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <h1 style="color: var(--accent); font-size: 2rem; margin-bottom: 0.5rem;">
+                                <i class="fas fa-lock"></i> Admin Access
+                            </h1>
+                            <p style="color: var(--text-muted);">Enter your credentials to access the dashboard</p>
+                        </div>
+                        
+                        <form onsubmit="handleAdminLogin(event)">
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="text" id="adminUsername" placeholder="Username" required value="admin" style="
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border: 2px solid var(--border);
+                                    border-radius: 10px;
+                                    background: var(--secondary);
+                                    color: var(--text);
+                                    font-size: 1rem;
+                                ">
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="password" id="adminPassword" placeholder="Password" required value="password" style="
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border: 2px solid var(--border);
+                                    border-radius: 10px;
+                                    background: var(--secondary);
+                                    color: var(--text);
+                                    font-size: 1rem;
+                                ">
+                            </div>
+                            
+                            <button type="submit" style="
+                                width: 100%;
+                                padding: 1rem;
+                                background: var(--accent);
+                                border: none;
+                                border-radius: 10px;
+                                color: var(--primary);
+                                font-weight: 700;
+                                font-size: 1.1rem;
+                                cursor: pointer;
+                                transition: all 0.3s;
+                            ">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </button>
+                        </form>
+                        
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <a href="#" onclick="backToStore()" style="color: var(--accent); text-decoration: none;">
+                                <i class="fas fa-arrow-left"></i> Back to Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', adminLoginHTML);
+        }
+
+        function backToStore() {
+            document.getElementById('adminLogin').remove();
+            document.getElementById('customer-interface').style.display = 'block';
+            showPage('home');
         }
 
         function handleAdminLogin(e) {
@@ -3155,17 +2822,578 @@
             const password = document.getElementById('adminPassword').value;
             
             if (username === 'admin' && password === 'password') {
-                document.getElementById('adminLogin').style.display = 'none';
-                document.getElementById('adminDashboard').style.display = 'block';
-                initAdminDashboard();
-                showToast('Welcome to Admin Dashboard!', 'success');
+                document.getElementById('adminLogin').remove();
+                showAdminDashboard();
             } else {
                 showToast('Invalid credentials!', 'error');
             }
         }
 
+        function showAdminDashboard() {
+            const adminDashboardHTML = `
+                <div class="admin-dashboard" id="adminDashboard" style="
+                    display: block;
+                    min-height: 100vh;
+                    background: var(--primary);
+                ">
+                    <aside style="
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        width: 280px;
+                        height: 100vh;
+                        background: var(--secondary);
+                        border-right: 1px solid var(--border);
+                        padding: 2rem;
+                        overflow-y: auto;
+                        z-index: 100;
+                    ">
+                        <div style="
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            color: var(--accent);
+                            margin-bottom: 3rem;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <i class="fas fa-bolt"></i>
+                            TechVault Admin
+                        </div>
+                        
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('dashboard')" class="admin-nav-link active" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-home"></i> Dashboard
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('products')" class="admin-nav-link" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-box"></i> Products
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('orders')" class="admin-nav-link" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-shopping-bag"></i> Orders
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('customers')" class="admin-nav-link" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-users"></i> Customers
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('inventory')" class="admin-nav-link" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-warehouse"></i> Inventory
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="showAdminSection('backup')" class="admin-nav-link" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-database"></i> Backup & Export
+                                </a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="#" onclick="logoutAdmin()" style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    padding: 1rem;
+                                    color: var(--text-muted);
+                                    text-decoration: none;
+                                    border-radius: 10px;
+                                    transition: all 0.3s;
+                                ">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <main style="
+                        margin-left: 280px;
+                        padding: 2rem;
+                    ">
+                        <!-- Dashboard Section -->
+                        <div id="admin-dashboard-section" class="admin-section">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Dashboard Overview</h1>
+                                <div style="display: flex; align-items: center; gap: 1rem;">
+                                    <span>Welcome, Admin</span>
+                                    <button onclick="logoutAdmin()" style="
+                                        padding: 0.5rem 1.5rem;
+                                        background: var(--danger);
+                                        border: none;
+                                        border-radius: 8px;
+                                        color: white;
+                                        cursor: pointer;
+                                    ">Logout</button>
+                                </div>
+                            </div>
+
+                            <div style="
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                gap: 2rem;
+                                margin-bottom: 3rem;
+                            ">
+                                <div style="
+                                    background: var(--card-bg);
+                                    padding: 2rem;
+                                    border-radius: 20px;
+                                    border: 1px solid var(--border);
+                                    position: relative;
+                                    overflow: hidden;
+                                ">
+                                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--accent);"></div>
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        background: var(--secondary);
+                                        border-radius: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.5rem;
+                                        color: var(--accent);
+                                        margin-bottom: 1rem;
+                                    ">
+                                        <i class="fas fa-box"></i>
+                                    </div>
+                                    <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;" id="statProducts">0</div>
+                                    <div style="color: var(--text-muted);">Total Products</div>
+                                </div>
+                                
+                                <div style="
+                                    background: var(--card-bg);
+                                    padding: 2rem;
+                                    border-radius: 20px;
+                                    border: 1px solid var(--border);
+                                    position: relative;
+                                    overflow: hidden;
+                                ">
+                                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--success);"></div>
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        background: var(--secondary);
+                                        border-radius: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.5rem;
+                                        color: var(--success);
+                                        margin-bottom: 1rem;
+                                    ">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;" id="statOrders">0</div>
+                                    <div style="color: var(--text-muted);">Total Orders</div>
+                                </div>
+                                
+                                <div style="
+                                    background: var(--card-bg);
+                                    padding: 2rem;
+                                    border-radius: 20px;
+                                    border: 1px solid var(--border);
+                                    position: relative;
+                                    overflow: hidden;
+                                ">
+                                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--warning);"></div>
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        background: var(--secondary);
+                                        border-radius: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.5rem;
+                                        color: var(--warning);
+                                        margin-bottom: 1rem;
+                                    ">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;" id="statRevenue">$0</div>
+                                    <div style="color: var(--text-muted);">Total Revenue</div>
+                                </div>
+                                
+                                <div style="
+                                    background: var(--card-bg);
+                                    padding: 2rem;
+                                    border-radius: 20px;
+                                    border: 1px solid var(--border);
+                                    position: relative;
+                                    overflow: hidden;
+                                ">
+                                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--danger);"></div>
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        background: var(--secondary);
+                                        border-radius: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.5rem;
+                                        color: var(--danger);
+                                        margin-bottom: 1rem;
+                                    ">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;" id="statCustomers">0</div>
+                                    <div style="color: var(--text-muted);">Customers</div>
+                                </div>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                                margin-bottom: 2rem;
+                            ">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Recent Orders</h3>
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Order ID</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Customer</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Date</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Amount</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recentOrdersTable">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Products Section -->
+                        <div id="admin-products-section" class="admin-section" style="display: none;">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Product Management</h1>
+                                <button onclick="openProductForm()" style="
+                                    padding: 0.8rem 1.5rem;
+                                    background: var(--success);
+                                    border: none;
+                                    border-radius: 8px;
+                                    color: var(--primary);
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                ">
+                                    <i class="fas fa-plus"></i> Add Product
+                                </button>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                            ">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Image</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Name</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Category</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Price</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Stock</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminProductsTable">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Orders Section -->
+                        <div id="admin-orders-section" class="admin-section" style="display: none;">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Order Management</h1>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                            ">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Order ID</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Customer</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Items</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Total</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Status</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminOrdersTable">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Customers Section -->
+                        <div id="admin-customers-section" class="admin-section" style="display: none;">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Customer Management</h1>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                            ">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Name</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Email</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Orders</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Total Spent</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Joined</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminCustomersTable">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Inventory Section -->
+                        <div id="admin-inventory-section" class="admin-section" style="display: none;">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Inventory Tracking</h1>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                            ">
+                                <h3 style="margin-bottom: 1.5rem; color: var(--danger);">
+                                    <i class="fas fa-exclamation-triangle"></i> Low Stock Alerts
+                                </h3>
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Product</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Current Stock</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Status</th>
+                                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--accent);">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="lowStockTable">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Backup Section -->
+                        <div id="admin-backup-section" class="admin-section" style="display: none;">
+                            <div style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 3rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid var(--border);
+                            ">
+                                <h1>Backup & Export</h1>
+                            </div>
+
+                            <div style="
+                                background: var(--card-bg);
+                                border-radius: 20px;
+                                border: 1px solid var(--border);
+                                padding: 2rem;
+                            ">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Export Data</h3>
+                                <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                    gap: 2rem;
+                                    margin-top: 2rem;
+                                ">
+                                    <div style="
+                                        background: var(--secondary);
+                                        padding: 2rem;
+                                        border-radius: 15px;
+                                        text-align: center;
+                                    ">
+                                        <i class="fas fa-file-csv" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                                        <h4>Export Products</h4>
+                                        <p style="color: var(--text-muted); margin: 1rem 0;">Download all product data as CSV</p>
+                                        <button onclick="exportProducts()" style="
+                                            padding: 0.8rem 1.5rem;
+                                            background: var(--accent);
+                                            border: none;
+                                            border-radius: 8px;
+                                            color: var(--primary);
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                        ">
+                                            <i class="fas fa-download"></i> Download
+                                        </button>
+                                    </div>
+                                    
+                                    <div style="
+                                        background: var(--secondary);
+                                        padding: 2rem;
+                                        border-radius: 15px;
+                                        text-align: center;
+                                    ">
+                                        <i class="fas fa-file-export" style="font-size: 3rem; color: var(--success); margin-bottom: 1rem;"></i>
+                                        <h4>Export Orders</h4>
+                                        <p style="color: var(--text-muted); margin: 1rem 0;">Download all orders as CSV</p>
+                                        <button onclick="exportOrders()" style="
+                                            padding: 0.8rem 1.5rem;
+                                            background: var(--success);
+                                            border: none;
+                                            border-radius: 8px;
+                                            color: var(--primary);
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                        ">
+                                            <i class="fas fa-download"></i> Download
+                                        </button>
+                                    </div>
+                                    
+                                    <div style="
+                                        background: var(--secondary);
+                                        padding: 2rem;
+                                        border-radius: 15px;
+                                        text-align: center;
+                                    ">
+                                        <i class="fas fa-database" style="font-size: 3rem; color: var(--warning); margin-bottom: 1rem;"></i>
+                                        <h4>Full Backup</h4>
+                                        <p style="color: var(--text-muted); margin: 1rem 0;">Create complete data backup</p>
+                                        <button onclick="createBackup()" style="
+                                            padding: 0.8rem 1.5rem;
+                                            background: var(--warning);
+                                            border: none;
+                                            border-radius: 8px;
+                                            color: var(--primary);
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                        ">
+                                            <i class="fas fa-save"></i> Backup Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', adminDashboardHTML);
+            initAdminDashboard();
+        }
+
         function logoutAdmin() {
-            document.getElementById('adminDashboard').style.display = 'none';
+            document.getElementById('adminDashboard').remove();
             document.getElementById('customer-interface').style.display = 'block';
             showPage('home');
         }
@@ -3188,11 +3416,15 @@
         }
 
         function showAdminSection(section) {
-            document.querySelectorAll('.admin-section-content').forEach(s => s.style.display = 'none');
+            document.querySelectorAll('.admin-section').forEach(s => s.style.display = 'none');
             document.getElementById(`admin-${section}-section`).style.display = 'block';
             
-            document.querySelectorAll('.admin-nav a').forEach(a => a.classList.remove('active'));
-            event.target.classList.add('active');
+            document.querySelectorAll('.admin-nav-link').forEach(a => {
+                a.style.background = 'transparent';
+                a.style.color = 'var(--text-muted)';
+            });
+            event.target.style.background = 'var(--accent)';
+            event.target.style.color = 'var(--primary)';
             
             if (section === 'dashboard') updateAdminStats();
             if (section === 'products') renderAdminProducts();
@@ -3205,19 +3437,31 @@
             const tbody = document.getElementById('adminProductsTable');
             tbody.innerHTML = products.map(p => `
                 <tr>
-                    <td><img src="${p.image}" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;"></td>
-                    <td>${p.name}</td>
-                    <td>${getCategoryName(p.category)}</td>
-                    <td>$${p.price.toFixed(2)}</td>
-                    <td class="${p.stock < 10 ? 'stock-low' : 'stock-ok'}">${p.stock}</td>
-                    <td>
-                        <div class="table-actions">
-                            <button class="btn-edit" onclick="editProduct(${p.id})">
-                                <i class="fas fa-edit"></i>
-                            </button>
-                            <button class="btn-delete" onclick="deleteProduct(${p.id})">
-                                <i class="fas fa-trash"></i>
-                            </button>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                        <img src="${p.image}" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;">
+                    </td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${p.name}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${getCategoryName(p.category)}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">$${p.price.toFixed(2)}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: ${p.stock < 10 ? 'var(--danger)' : 'var(--success)'}; font-weight: 600;">${p.stock}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button onclick="editProduct(${p.id})" style="
+                                padding: 0.5rem 1rem;
+                                background: var(--warning);
+                                border: none;
+                                border-radius: 6px;
+                                color: var(--primary);
+                                cursor: pointer;
+                            "><i class="fas fa-edit"></i></button>
+                            <button onclick="deleteProduct(${p.id})" style="
+                                padding: 0.5rem 1rem;
+                                background: var(--danger);
+                                border: none;
+                                border-radius: 6px;
+                                color: white;
+                                cursor: pointer;
+                            "><i class="fas fa-trash"></i></button>
                         </div>
                     </td>
                 </tr>
@@ -3228,21 +3472,33 @@
             const tbody = document.getElementById('adminOrdersTable');
             tbody.innerHTML = orders.map(o => `
                 <tr>
-                    <td>${o.id}</td>
-                    <td>${o.customer.name}</td>
-                    <td>${o.items.length} items</td>
-                    <td>$${o.total.toFixed(2)}</td>
-                    <td>
-                        <select onchange="updateOrderStatus('${o.id}', this.value)" class="status-badge status-${o.status}">
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${o.id}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${o.customer.name}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${o.items.length} items</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">$${o.total.toFixed(2)}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                        <select onchange="updateOrderStatus('${o.id}', this.value)" style="
+                            padding: 0.3rem 0.8rem;
+                            border-radius: 20px;
+                            border: none;
+                            background: ${o.status === 'pending' ? 'var(--warning)' : o.status === 'shipped' ? '#3498db' : 'var(--success)'};
+                            color: ${o.status === 'pending' ? 'var(--primary)' : 'white'};
+                            cursor: pointer;
+                        ">
                             <option value="pending" ${o.status === 'pending' ? 'selected' : ''}>Pending</option>
                             <option value="shipped" ${o.status === 'shipped' ? 'selected' : ''}>Shipped</option>
                             <option value="delivered" ${o.status === 'delivered' ? 'selected' : ''}>Delivered</option>
                         </select>
                     </td>
-                    <td>
-                        <button class="btn-edit" onclick="viewOrder('${o.id}')">
-                            <i class="fas fa-eye"></i>
-                        </button>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                        <button onclick="viewOrder('${o.id}')" style="
+                            padding: 0.5rem 1rem;
+                            background: var(--accent);
+                            border: none;
+                            border-radius: 6px;
+                            color: var(--primary);
+                            cursor: pointer;
+                        "><i class="fas fa-eye"></i></button>
                     </td>
                 </tr>
             `).join('');
@@ -3252,11 +3508,11 @@
             const tbody = document.getElementById('adminCustomersTable');
             tbody.innerHTML = customers.map(c => `
                 <tr>
-                    <td>${c.name}</td>
-                    <td>${c.email}</td>
-                    <td>${c.orders}</td>
-                    <td>$${c.totalSpent.toFixed(2)}</td>
-                    <td>${new Date(c.joined).toLocaleDateString()}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${c.name}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${c.email}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${c.orders}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">$${c.totalSpent.toFixed(2)}</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${new Date(c.joined).toLocaleDateString()}</td>
                 </tr>
             `).join('');
         }
@@ -3266,17 +3522,22 @@
             const tbody = document.getElementById('lowStockTable');
             
             if (lowStock.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" style="text-align: center;">No low stock items</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; padding: 2rem;">No low stock items</td></tr>';
             } else {
                 tbody.innerHTML = lowStock.map(p => `
                     <tr>
-                        <td>${p.name}</td>
-                        <td class="stock-low">${p.stock}</td>
-                        <td><span style="color: var(--danger);">Critical</span></td>
-                        <td>
-                            <button class="btn-edit" onclick="editProduct(${p.id})">
-                                Restock
-                            </button>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${p.name}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--danger); font-weight: 600;">${p.stock}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);"><span style="color: var(--danger);">Critical</span></td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                            <button onclick="editProduct(${p.id})" style="
+                                padding: 0.5rem 1rem;
+                                background: var(--warning);
+                                border: none;
+                                border-radius: 6px;
+                                color: var(--primary);
+                                cursor: pointer;
+                            ">Restock</button>
                         </td>
                     </tr>
                 `).join('');
@@ -3288,117 +3549,25 @@
             const recent = orders.slice(-5).reverse();
             
             if (recent.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">No orders yet</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 2rem;">No orders yet</td></tr>';
             } else {
                 tbody.innerHTML = recent.map(o => `
                     <tr>
-                        <td>${o.id}</td>
-                        <td>${o.customer.name}</td>
-                        <td>${new Date(o.date).toLocaleDateString()}</td>
-                        <td>$${o.total.toFixed(2)}</td>
-                        <td><span class="status-badge status-${o.status}">${o.status}</span></td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${o.id}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${o.customer.name}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">${new Date(o.date).toLocaleDateString()}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">$${o.total.toFixed(2)}</td>
+                        <td style="padding: 1rem; border-bottom: 1px solid var(--border);">
+                            <span style="
+                                padding: 0.3rem 0.8rem;
+                                border-radius: 20px;
+                                font-size: 0.85rem;
+                                background: ${o.status === 'pending' ? 'var(--warning)' : o.status === 'shipped' ? '#3498db' : 'var(--success)'};
+                                color: ${o.status === 'pending' ? 'var(--primary)' : 'white'};
+                            ">${o.status}</span>
+                        </td>
                     </tr>
                 `).join('');
-            }
-        }
-
-        // Product Management
-        function openProductModal(productId = null) {
-            editingProductId = productId;
-            const modal = document.getElementById('productFormModal');
-            const form = document.getElementById('productForm');
-            
-            if (productId) {
-                const product = products.find(p => p.id === productId);
-                document.getElementById('modalTitle').textContent = 'Edit Product';
-                document.getElementById('productId').value = product.id;
-                document.getElementById('productName').value = product.name;
-                document.getElementById('productCategory').value = product.category;
-                document.getElementById('productPrice').value = product.price;
-                document.getElementById('productStock').value = product.stock;
-                document.getElementById('productDescription').value = product.description;
-                document.getElementById('productRating').value = product.rating;
-                
-                const preview = document.getElementById('imagePreview');
-                preview.innerHTML = `<img src="${product.image}" style="width: 100%; height: 100%; object-fit: cover;">`;
-            } else {
-                document.getElementById('modalTitle').textContent = 'Add Product';
-                form.reset();
-                document.getElementById('productId').value = '';
-                document.getElementById('imagePreview').innerHTML = `
-                    <div class="image-preview-placeholder">
-                        <i class="fas fa-image" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-                        <p>Click to upload image</p>
-                    </div>
-                `;
-            }
-            
-            modal.classList.add('active');
-        }
-
-        function closeProductFormModal() {
-            document.getElementById('productFormModal').classList.remove('active');
-            editingProductId = null;
-        }
-
-        function previewImage(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const preview = document.getElementById('imagePreview');
-                    preview.innerHTML = `<img src="${e.target.result}" style="width: 100%; height: 100%; object-fit: cover;">`;
-                };
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function saveProduct(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('productName').value,
-                category: document.getElementById('productCategory').value,
-                price: parseFloat(document.getElementById('productPrice').value),
-                stock: parseInt(document.getElementById('productStock').value),
-                description: document.getElementById('productDescription').value,
-                rating: parseFloat(document.getElementById('productRating').value),
-                image: document.querySelector('#imagePreview img')?.src || 'https://via.placeholder.com/400'
-            };
-            
-            if (editingProductId) {
-                const index = products.findIndex(p => p.id === editingProductId);
-                products[index] = { ...products[index], ...formData };
-                showToast('Product updated successfully!', 'success');
-            } else {
-                const newId = Math.max(...products.map(p => p.id)) + 1;
-                products.push({
-                    id: newId,
-                    ...formData,
-                    featured: false
-                });
-                showToast('Product added successfully!', 'success');
-            }
-            
-            closeProductFormModal();
-            renderAdminProducts();
-            renderFeaturedProducts();
-            renderShopProducts();
-            updateAdminStats();
-        }
-
-        function editProduct(id) {
-            openProductModal(id);
-        }
-
-        function deleteProduct(id) {
-            if (confirm('Are you sure you want to delete this product?')) {
-                products = products.filter(p => p.id !== id);
-                renderAdminProducts();
-                renderFeaturedProducts();
-                renderShopProducts();
-                updateAdminStats();
-                showToast('Product deleted successfully!', 'success');
             }
         }
 
@@ -3418,7 +3587,36 @@
             alert(`Order Details:\n\nID: ${order.id}\nCustomer: ${order.customer.name}\nEmail: ${order.customer.email}\nTotal: $${order.total.toFixed(2)}\nStatus: ${order.status}\n\nItems:\n${order.items.map(i => `- ${i.name} x${i.quantity}`).join('\n')}`);
         }
 
-        // Backup & Export
+        function deleteProduct(id) {
+            if (confirm('Are you sure you want to delete this product?')) {
+                products = products.filter(p => p.id !== id);
+                renderAdminProducts();
+                renderFeaturedProducts();
+                renderShopProducts();
+                updateAdminStats();
+                showToast('Product deleted successfully!', 'success');
+            }
+        }
+
+        function editProduct(id) {
+            // Simple edit - in real app would open modal
+            const product = products.find(p => p.id === id);
+            const newStock = prompt(`Update stock for ${product.name}:`, product.stock);
+            if (newStock !== null) {
+                product.stock = parseInt(newStock);
+                renderAdminProducts();
+                renderFeaturedProducts();
+                renderShopProducts();
+                renderLowStock();
+                showToast('Product updated!', 'success');
+            }
+        }
+
+        function openProductForm() {
+            alert('Product form would open here. In a full implementation, this would open a modal to add new products.');
+        }
+
+        // Export functions
         function exportProducts() {
             const csv = convertToCSV(products);
             downloadFile(csv, 'products.csv', 'text/csv');
@@ -3468,38 +3666,10 @@
             URL.revokeObjectURL(url);
         }
 
-        // Contact Form
-        function submitContact(e) {
-            e.preventDefault();
-            showToast('Message sent successfully! We will get back to you soon.', 'success');
-            e.target.reset();
-        }
-
-        // Toast Notifications
-        function showToast(message, type = 'success') {
-            const container = document.getElementById('toastContainer');
-            const toast = document.createElement('div');
-            toast.className = `toast ${type}`;
-            
-            const icon = type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle';
-            
-            toast.innerHTML = `
-                <i class="fas fa-${icon} toast-icon"></i>
-                <span>${message}</span>
-            `;
-            
-            container.appendChild(toast);
-            
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
-        }
-
         // Close modals on escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeProductModal();
-                closeProductFormModal();
             }
         });
     </script>
